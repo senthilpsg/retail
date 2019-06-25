@@ -1,0 +1,19 @@
+{
+    "name": "Heroku/php",
+    "description": "Test for heroku",
+"post-install-cmd" : [
+     "php artisan clear-compiled",
+     "php artisan optimize",
+     "chmod -R 777 public/"
+ ],
+    "authors": [
+        {
+            "name": "Yashvanth",
+            "email": "nallathimbi@gmail.com"
+        }
+    ],
+    "require": {}
+
+}
+
+
