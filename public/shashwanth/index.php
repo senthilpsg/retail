@@ -62,7 +62,9 @@
             <center>
                 <div class="username"><input style="min-height:40px;width:100%;background:#bad6f7;color#fff;" type="text"  placeholder="username"></div><br>
                 <div class="password"><input style="min-height:40px;width:100%;background:#bad6f7;color#fff;" type="text" placeholder="password"></div><br>
-                <div class="forgotpassword"><a href="#">forgot password?</a></div>
+                <div class="forgotpassword">
+                <a href="/retail/public/yaswanth/forgotit.php">forgot password?</a>
+                </div>
             <button class="btn">sign in</button></center>
 
         </div></center>

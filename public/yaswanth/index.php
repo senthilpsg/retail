@@ -50,7 +50,8 @@
                    
                     <input style="min-height:40px;width: 100%"type="password" placeholder="enter password" name="psw" required>
                 </div>
-                <br><div class="forgot"><a href="forgotit.php";style="color:#1f7eea;text-align:left;width:100%;font">forgot it</a></div>
+                <br><div class="forgot">
+                <a href="forgotit.php";style="color:#1f7eea;text-align:left;width:100%;font">forgot it</a></div>
                 <br>
                 <label>
                    <div class=login>
