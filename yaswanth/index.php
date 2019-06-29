@@ -17,7 +17,7 @@
         .username {
             
             width: 100%;
-            text-align-last: left
+            text-align-last: left;
         }
 
         .password {

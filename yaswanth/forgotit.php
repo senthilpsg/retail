@@ -31,7 +31,7 @@ h1{
 </style>
 </head>
 <body>
-<center><h1>wave</h1> <h2 style="font-size:4ch">forgot your password</h2></center>
+<center><h1>wave</h1> <h2 style="font-size:33px;font-style:timesnewroman;font-weight:bold;">Forgot Your Password ?</h2></center>
 <center>
     <div class="content"><p style="font-family: Averta,sans-serif;position: relative;overflow: visible;font-size: 16px;line-height: 1.4;text-size-adjust: 100%;text-align:left">Enter your<span style="font-family: Averta,sans-serif;border-bottom:2px dotted;border-color:inherit;position: relative;overflow: visible;font-size: 16px;line-height: 1.4;text-size-adjust: 100%">primary emai address </span>we’ll send you <br>instructions on how to reset your password.</p></div></center>
 <form>
