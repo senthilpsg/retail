@@ -39,7 +39,7 @@
    include "menu.php" ;
    ?>
     <div class="right-col">
-    <h1>Dashboard</h1>
+    <h1>Sales</h1>
     </div>
 </div>
 
