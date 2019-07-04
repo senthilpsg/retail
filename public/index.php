@@ -56,7 +56,7 @@
         <h1>wave</h1>
         <h2>sign in</h2>
     </center>
-    <form>
+    <form action="dash.php">
        <center><div class="container">
 
             <center>
@@ -65,7 +65,9 @@
                 <div class="forgotpassword">
                 <a href="forgotit.php">forgot password?</a>
                 </div>
-            <button class="btn">sign in</button></center>
+
+            <button class="btn" type="submit">sign in</button>
+            
 
         </div></center>
     </form>
