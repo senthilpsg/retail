@@ -1,24 +1,6 @@
-<style>
- .left-col {
-            border-right: 1px #ebeff4;
-            width: 20%;
-            height: 100%;
-            background: #ebeff4;
-            font-family: arial;
-            float: left;
-            text-decoration: none;
+<div class="left-col">
 
-        }
-
-     
-        .left-menu li {
-            padding: 10px;
-            list-style: none;
-        }
-
-</style><div class="left-col"> 
-
-    <ul class="left-menu">
+    <ul class="left-menu" style="color:dimgray;">
         <li>
             <a href="dash.php">
                 Dashboard
@@ -34,9 +16,18 @@
                 Sales
             </a>
         </li>
+        <li>
+            <a href="customer statements.php">
+                customer statements
+            </a>
         <li>Purchase</li>
         <li>Inventory</li>
         <li>Settings</li>
+        <li>purchases</li>
+        <li>accounting</li>
+        <li>banking</li>
+        <li>payroll</li>
+        <li>payments</li>
         
     </ul>
 </div>
