@@ -12,9 +12,11 @@
             text-decoration: none;
         }
         .right-col{
-            width: 80%;
+            width: 79.5%;
             height: 100%;
             font-family: arial;
+            float:left;
+            border:2px solid black;
         }
 
         .left-menu li {
@@ -31,18 +33,69 @@
             height: 5%;
             color: #fff;
             font-size: 17px;
+            padding-top:2px;
+        }
+        .table{
+            border:2px solid black;
+        }
+
+        table td{
+            padding:10px;
         }
     </style>
     <body>
-        <div class="container">
             <?php
             include "menu-2.php";
             ?>
         <div class="right-col" >
         <h1>Customers</h1>
-    </div>
     <div style="float:right;">
     <button class="btn">Add a customer</button>
+    </div>
+
+    <style></style>
+    <table style="width:1024px;">
+        <tr style="text-align:left;">
+          
+            <th style=width:30%;>Name</th>
+            <th style=width:30%;>Email</th>
+            <th style=width:25%;>Phone</th>
+            <th style=width:25%;>Action</th>
+
+        </tr>
+
+            <td>
+                Shashwanth
+            </td>
+            <td>
+                shash@gmail.com
+            </td>
+            <td>9879869868</td>
+            <td>Delete</td>
+        </tr>
+        <tr style="text-align:left;">
+            <td>
+                yashwanth
+            </td>
+            <td>yash@gmail</td>
+            <td>9631363653</td>
+            <td>delete</td>
+
+        <tr style="text-align:left;">
+        <td>monish</td>
+        <td>monish@gmail.com</td>
+        <td>9632636566</td>
+        <td>delete</td>
+
+        </tr>
+        <tr style="text-align:left  ;">
+            <td>ragul</td>
+            <td>ragul@gmail.com</td>
+            <td>9373878764</td>
+            <td>delete</td>
+        </tr>
+</table>
+    </div>
     </div>
 
 
