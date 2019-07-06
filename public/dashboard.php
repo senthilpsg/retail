@@ -35,7 +35,7 @@
 </head>
 <body>
 <div class="container">
-   <?php   
+   <?php  
    include "menu.php" ;
    ?>
     <div class="right-col">
