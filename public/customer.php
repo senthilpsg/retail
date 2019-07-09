@@ -12,7 +12,7 @@
             text-decoration: none;
         }
         .right-col{
-            width: 79.5%;
+git pull            width: 79.5%;
             height: 100%;
             font-family: arial;
             float:left;
@@ -33,7 +33,7 @@
             height: 5%;
             color: #fff;
             font-size: 17px;
-            padding-top:2px;
+            padding-top:2gitpx;
         }
         .table{
             border:2px solid black;

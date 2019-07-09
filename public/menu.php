@@ -25,7 +25,7 @@
             </a>
         </li>
         <li>
-            <a href="customers.php">
+            <a href="customer.php">
                 Customers
             </a>
         </li>

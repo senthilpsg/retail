@@ -80,12 +80,11 @@
    include "menu.php" ;
    ?>
     <div class="right-col">
-        <div style="float:left;">
+        <div >
             <h1>Dashboard</h1>
-        </div>
-        <div>
+        
             <button class="btn" style="float:right;">Create a new</button>
-        </div>
+</div>
         <div style="clear:left;">
             <h2>Bank accounts and credit cards</h2>
         </div>

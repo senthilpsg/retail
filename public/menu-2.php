@@ -2,22 +2,22 @@
 
     <ul class="left-menu" style="color:dimgray;">
         <li>
-            <a href="dash.php">
+            <a style="text-decortion:none;" href="dash.php">
                 Dashboard
             </a>
         </li>
         <li>
-            <a href="customers.php">
+            <a style="text-decortion:none;" href="customer.php">
                 Customers
             </a>
         </li>
         <li>
-            <a href="sales.php">
+            <a style="text-decortion:none;" href="sales.php ">
                 Sales
             </a>
         </li>
         <li>
-            <a href="customer statements.php">
+            <a style="text-decortion:none;" href="customer statements.php">
                 customer statements
             </a>
         <li>Purchase</li>
