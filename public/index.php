@@ -56,12 +56,24 @@
         <h1>wave</h1>
         <h2>sign in</h2>
     </center>
-    <form action="dash.php">
+    <form action="data.php" method="get">
        <center><div class="container">
 
             <center>
-                <div class="username"><input style="min-height:40px;width:100%;background:#bad6f7;color#fff;" type="text"  placeholder="username"></div><br>
-                <div class="password"><input style="min-height:40px;width:100%;background:#bad6f7;color#fff;" type="text" placeholder="password"></div><br>
+                <div class="username">
+                <input style="min-height:40px;width:100%;background:#bad6f7;color#fff;"
+                 type="text"  placeholder="username" name="username"></div><br>
+
+
+
+                <div class="password">
+                
+                <input style="min-height:40px;width:100%;background:#bad6f7;color#fff;"
+                
+                 type="text" placeholder="password" name="pass"></div><br>
+
+
+                 
                 <div class="forgotpassword">
                 <a href="forgotit.php">forgot password?</a>
                 </div>
