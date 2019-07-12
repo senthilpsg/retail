@@ -50,11 +50,11 @@ and small business simplify their finances.</p>
             margin-top: 40px;
         } 
     </style>
-<form>
-<div><input id="input" type="text" placeholder="  Email">
+<form action="learning/monish/mysqli.php" method="get">
+<div><input id="input" type="text" placeholder="  Email" name="email">
         </div>
         <div>
-            <input type="text" id="input" placeholder="  Password">
+            <input type="text" id="input" placeholder=" Password" name="password">
         </div>
     </center>
     <center>
