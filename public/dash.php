@@ -79,6 +79,7 @@
     <?php  
    include "menu.php" ;
    ?>
+   <form>
     <div class="right-col">
         <div >
             <h1>Dashboard</h1>
@@ -120,7 +121,7 @@
                 
                
     </div>
-
+</form>
     
 
 

@@ -11,6 +11,7 @@
 <a href="php operators.php">php operators</a><br>
 <a href="php strings.php">php strings</a><br>
 <a href="php variables.php">php variables</a><br>
+<a href="php for loops.php">php for loops</a><br>
 </div>
 </body>
 </html>
