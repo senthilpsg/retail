@@ -2,6 +2,8 @@
 
 global $conn;
 
+session_start();
+
 function connect_db($server,$user,$pass,$dbname){
     global $conn;
     $conn = mysqli_connect($server,$user, $pass,$dbname);
@@ -15,6 +17,8 @@ function connect_db($server,$user,$pass,$dbname){
     }
     
 }
+
+
 
 function login(){
     global $conn,$username,$message,$pass;
@@ -33,6 +37,9 @@ function login(){
     
    
     if(authenticate($username,$pass)){
+
+        $_SESSION['username'] = $username;
+
         header ("location:dash.php");
     }
     else{

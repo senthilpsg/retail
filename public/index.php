@@ -9,8 +9,6 @@ $pass = '';
 
 
 
-
-
 //IF submit button clicked
 if(isset($_GET['username'])){
     login();
