@@ -2,10 +2,14 @@
 
 <head>
     <title>wave page</title>
+    <center>
+    <img src="img/logo-full-black.svg" alt="wave">
+    </center>
     <style>
         h1,h2{
-            font-family: 'Times New Roman';
-            font-size:50px;
+            font-family: 'arial';
+            font-size:40px;
+            color:"dimslategrey";
         }
         .container {
 
@@ -32,8 +36,7 @@
         }
         .forgotpassword{
             margin:10px;
-            text-align:left;
-            
+            text-align:left;        
             
         }
         .btn{
@@ -53,20 +56,19 @@
 
 <body>
     <center>
-        <h1>wave</h1>
         <h2>sign in</h2>
     </center>
-    <form action="data.php" method="get">
+    <form action="mytest.php" method="get">
        <center><div class="container">
 
             <center>
                 <div class="username">
                 <input style="min-height:40px;width:100%;background:#bad6f7;color#fff;"
-                 type="text"  placeholder="username" name="username"></div><br>
+                 type="text"  placeholder="username" name="username" required></div><br>
 
 
 
-                <div class="password">
+                <div class="password" required>
                 
                 <input style="min-height:40px;width:100%;background:#bad6f7;color#fff;"
                 
@@ -75,7 +77,7 @@
 
                  
                 <div class="forgotpassword">
-                <a href="forgotit.php">forgot password?</a>
+                <a style="text-decoration:none;" href="forgotit.php">forgot password?</a>
                 </div>
 
             <button class="btn" type="submit">sign in</button>
