@@ -4,6 +4,7 @@ $message = '';
 $username ='';
 $pass = '';
 
+
 if(isset($_GET['username']))
 $username= $_GET['username'];
 
@@ -12,6 +13,7 @@ if(isset($_GET['pass']))
 $pass=$_GET['pass'];    
 
 
+if(isset($_GET['username'])){
 
 $servername='localhost';
 $dbname='retail';
@@ -55,7 +57,7 @@ else{
 //     var_dump($row);
 // }
 
-
+}
 ?>
 
 <html>
@@ -119,8 +121,8 @@ else{
 <body>
     <center>
         <h2>sign in</h2>
-    
-    <p><?php echo $message;  ?></p>
+
+        <p><?php echo $message;  ?></p>
     </center>
     <form action=""" method=" get">
         <center>
