@@ -3,59 +3,104 @@
 $message = '';
 $username ='';
 $pass = '';
+$conn=null;
 
 
-if(isset($_GET['username']))
-$username= $_GET['username'];
 
 
-if(isset($_GET['pass']))
-$pass=$_GET['pass'];    
-
-
+//IF submit button clicked
 if(isset($_GET['username'])){
-
-$servername='localhost';
-$dbname='retail';
-
-$conn = mysqli_connect($servername,"root", "",$dbname);
-
-
-if ($conn) {
+        login();
 }
 
+
+function login(){
+    global $conn,$username,$message,$pass;
+    
+    $servername='localhost';
+    $dbname='retail';
+    $db_username="root";
+    $db_password ="";
+
+    
+    $username= $_GET['username'];
+
+    $pass=$_GET['pass'];    
+    
+    $conn = connect_db($servername,$db_username,$db_password,$dbname);
+    
+   
+    if(authenticate($username,$pass)){
+        header ("location:dash.php");
+    }
     else{
-        ("Connection failed: " . mysqli_connect_error());
+        $message = "Login Failed";
+    }
+
+         
+    // echo "<br>Rows returned" . mysqli_num_rows($result);
+    
+    // echo "<br><br> Rows Data";
+    // while($row = mysqli_fetch_assoc($result)) {
+    //     //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    
+    //     var_dump($row);
+    // }
+        
 }
 
-$sql="select * from user where username='" . $username . "' ";
-
-
-
-$result=mysqli_query($conn,$sql);
-
-$row = mysqli_fetch_assoc($result);
-
- $db_username = $row['username'];
-
- $db_password = $row['password'];
-
-
- if($pass == $db_password){
-    header ("location:dash.php");
-}
-else{
-  $message = "Login Failed";
+function connect_db($server,$user,$pass,$dbname){
+    
+    $conn = mysqli_connect($server,$user, $pass,$dbname);
+    
+    if ($conn) {
+        return $conn;
+    }
+    
+        else{
+            ("Connection failed: " . mysqli_connect_error());
+    }
+    
 }
 
-// echo "<br>Rows returned" . mysqli_num_rows($result);
+/*
+*  This function receives username as parameters, 
+    gets data from database for this username, 
+    and returns that data
+*/
+function get_user($username){
+    global $conn;
+    $sql="select * from user where username='" . $username . "' ";
+    
+    $result=mysqli_query($conn,$sql);
+    
+    $row = mysqli_fetch_assoc($result);
 
-// echo "<br><br> Rows Data";
-// while($row = mysqli_fetch_assoc($result)) {
-//     //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+    return $row;
 
-//     var_dump($row);
-// }
+}
+
+function authenticate($username,$password){
+
+    $userdata = get_user($username);
+
+    if($userdata == null)
+        return false;
+
+    // echo "<br> User data from DB <br>" ;
+    // var_dump($userdata);
+
+    $db_username = $userdata['username'];
+    
+    $db_password = $userdata['password'];
+   
+   
+    if($password == $db_password){
+       return true;
+   }
+   else{
+     return false;
+   }
 
 }
 ?>
