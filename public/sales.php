@@ -38,7 +38,9 @@
 
 <div >
 <h1 style= "float:left">invoices</h1>
+<form action="create_invoice.php">
 <button  style="width:200px;margin-left:o;margin-right:0;margin:4px;color:white;background:blue;border:1px solid transparent;text-align:center;min-width:100px;border-radius:500px;font-family: Averta,sans-serif;padding: 8px 20px;float:right;"  type="submit">create a invoices</button>
+</form>
 <div style="clear:both"></div>
 </div>
 <div class="menu">

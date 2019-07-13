@@ -40,7 +40,7 @@ header('Location:dash.php');
 }
 
 
-mysqli_close($conn);
+mysqli_close($conn)
 
 ?>
 

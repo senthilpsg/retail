@@ -5,38 +5,62 @@ $message = '';
 
 if(isset($_POST['btn_register'])){
 
+    sign_up();
+  
+}
+
+function sign_up(){
+    global $message;
+
+     $a="localhost";
+     $b="root";
+     $c="";
+     $d="retail";
+
+    connect_db($a,$b,$c,$d);
+   
+
     $email=$_POST['email'];
     $password=$_POST['password'];
     $username=$_POST['username'];
     $phone_no=$_POST['phone_no'];
     $display_name=$_POST['display_name'];
 
+    $res = save_user($username,$password,$email,$phone_no,$display_name);
 
-    $servername="localhost";
-    $db_username="root";
-    $db_password="";
-    $db_name="retail";
-
-    $conn= new mysqli($servername,$db_username,$db_password,$db_name);
-    if ($conn->connect_error){
-        die("connection failed" .$conn->connect_error);
-
-    }   
-    //echo "connected successfully";
-
-    $sql="INSERT INTO `user` ( `username`, `password`, `user_email`, `display_name`,                `phone_no`, `status`, `date-time`) VALUES
-                ('$username', '$password', '$email', '$display_name', '$phone_no', 'active', '2019-07-13')";
-        //echo "<br><br>" . //$sql . "<br>";
-        $cc=mysqli_query($conn,$sql);
-
-    if($cc){
+    if($res){
         $message = "User Successfully Registered";
     }
     else{
         $message = "Error in registering the user";    
     }
-}
     
+}
+
+function connect_db($servername,$db_username,$db_password,$db_name){
+
+    global $conn,$username,$message,$password;
+    
+
+    $conn= new mysqli($servername,$db_username,$db_password,$db_name);
+
+    if ($conn->connect_error){
+        die("connection failed" .$conn->connect_error);
+    }
+    return $conn;
+
+}
+
+function save_user($username,$password,$email,$phone_no,$display_name){
+    global $conn;
+    
+    $sql="INSERT INTO `user` ( `username`, `password`, `user_email`, `display_name`,                `phone_no`, `status`, `date-time`) VALUES
+    ('$username', '$password', '$email', '$display_name', '$phone_no', 'active', '2019-07-13')";
+    
+    //echo "<br><br>" . //$sql . "<br>";
+    $cc=mysqli_query($conn,$sql);
+    return $cc;
+}
 
 ?>
 

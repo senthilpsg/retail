@@ -101,9 +101,22 @@ foreach($colors as $value){
     $age=array("bala"=>"23","ram"=>"34");
     ksort($age);
     foreach ($age as $x=>$x_value);
-    {echo "key=".$x.",value=".$x_value;
-    }
-   ?>
+    {echo "key=".$x.",value=".$x_value;}  ?><br>
+    <?php
+    $x=500;
+    $y=200;
+    function subraction(){
+      $GLOBALS['s']= $GLOBALS['x']-$GLOBALS['y'];}
+      subraction();
+      echo $s;  ?>
+
+
+
+
+
+
+    
+ 
 
 
 
