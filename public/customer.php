@@ -12,16 +12,16 @@
             text-decoration: none;
         }
         .right-col{
-git pull            width: 79.5%;
+            width: 80%;
             height: 100%;
             font-family: arial;
             float:left;
-            border:2px solid black;
         }
 
         .left-menu li {
             padding: 10px;
             list-style: none;
+            text-decoration:none;
         }
          .btn{
             background: #0f529f;
@@ -33,7 +33,7 @@ git pull            width: 79.5%;
             height: 5%;
             color: #fff;
             font-size: 17px;
-            padding-top:2gitpx;
+            padding-top:2px;
         }
         .table{
             border:2px solid black;
@@ -45,17 +45,18 @@ git pull            width: 79.5%;
     </style>
     <body>
             <?php
-            include "menu-2.php";
+            include "menu.php";
             ?>
-        <div class="right-col" >
+        <div class="right-col" style="text-decoration:none;" >
         <h1>Customers</h1>
-    <div style="float:right;">
+    <div style="float:right;padding-down:30px;">
     <button class="btn">Add a customer</button>
+    <a href="customer-list.php"></a>
     </div>
 
     <style></style>
     <table style="width:1024px;">
-        <tr style="text-align:left;">
+        <tr style="text-align:left;"><br><br><br><br><br>
           
             <th style=width:30%;>Name</th>
             <th style=width:30%;>Email</th>

@@ -3,7 +3,6 @@
 <head></head>
 <style>
 #nkl {
-    border: 2px solid black;
     height: 621px;
     width: 1034px;
     float: left;
@@ -20,7 +19,6 @@
 
 
     border-radius: 8px;
-    border: 1px solid #b2c2cd;
     height: 134px;
     width: 773px;
     margin-left: 134px;
@@ -42,7 +40,7 @@
 
 <body>
 
-    <?php include 'menuvsm.php';?>
+    <?php include 'menu vsm.php';?>
     <div id="nkl">
         <div id="jk">
         
