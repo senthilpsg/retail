@@ -82,10 +82,12 @@ th tr {
 </style>
 
 <body>
-    <?php include 'menuvsm.php';?>
+<?php
+ include "menuvsm.php";
+ ?>
     <div id="asd">
         <div style="float:left;">
-            <h1> New invoice</h1><br>
+            <h1> New order</h1><br>
             <form>
                 <input style="height:5%;width:550%;" type="text"
                     placeholder=" Business adress and contact details, title,summary and logo"></form>
@@ -96,11 +98,11 @@ th tr {
         </div>
         <div id="cvb">
             <form id="form">
-                Invoice number &nbsp;&nbsp;&nbsp;<input type="text" name="Invoice number"><br>
-                P.O./S.O. number <input type="text" name="P.O/S.O number"><br>
-                Invoice date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="yyyy-mm-dd"
+                customer name &nbsp;&nbsp;&nbsp;<input type="text" name="Invoice number"><br>
+                Phone number &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="P.O/S.O number"><br>
+                Paid Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="yyyy-mm-dd"
                     value="2019-07-05"><br>
-                Payment due &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="yyyy-mm-dd"
+                Delivery date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" placeholder="yyyy-mm-dd"
                     value="2019-07-05">
                 <p style="margin:127px;margin-top:2px;">On Recepit</p>
 
@@ -110,7 +112,7 @@ th tr {
             </form>
 
             <div id="iop">
-                <p style="margin-top:74px;"><a href="">Add a coustmer
+                <p style="margin-top:74px;"><a href="">Add a product
                     </a>
                 </p>
             </div><br> <br>

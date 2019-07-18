@@ -37,9 +37,9 @@
 
 
 <div >
-<h1 style= "float:left">invoices</h1>
-<form action="create_invoice.php">
-<button  style="width:200px;margin-left:o;margin-right:0;margin:4px;color:white;background:blue;border:1px solid transparent;text-align:center;min-width:100px;border-radius:500px;font-family: Averta,sans-serif;padding: 8px 20px;float:right;"  type="submit">create a invoices</button>
+<h1 style= "float:left">orders</h1>
+<form action="new_order.php">
+<button  style="width:200px;margin-left:o;margin-right:0;margin:4px;color:white;background:blue;border:1px solid transparent;text-align:center;min-width:100px;border-radius:500px;font-family: Averta,sans-serif;padding: 8px 20px;float:right;"  type="submit">place an order</button>
 </form>
 <div style="clear:both"></div>
 </div>
@@ -199,10 +199,10 @@
     border-radius: 500px;
     border-bottom: 4px solid #136acd;">All invoices </a><hr>
 </div>
-<center><h2> you have a unpaid invoices</h2>
+<center><h2> you have a unpaid orders</h2>
 <br>
-<p> you have 0 draft invoice.what will you like to do next</p>
-<button type="sumbit" style="border-radius:500px;padding: 8px 20px;">create an invoices</button>
+<p> you have 0 draft order.what will you like to do next</p>
+<button type="sumbit" style="border-radius:500px;padding: 8px 20px;">place an order</button>
 <button type="sumbit" style="border-radius:500px;padding: 8px 20px;">view drafts</button></center>
 
 </div>        
