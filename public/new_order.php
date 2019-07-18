@@ -7,7 +7,7 @@
     float: left;
     border: 2px solid black;
     height: 189%;
-    width: 81%
+    width: 79%
 }
 
 #qwe {
@@ -83,7 +83,7 @@ th tr {
 
 <body>
 <?php
- include "menuvsm.php";
+ include "menu.php";
  ?>
     <div id="asd">
         <div style="float:left;">
