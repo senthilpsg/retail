@@ -7,36 +7,26 @@
             font-family: arial;
             float: left;
             text-decoration: none;
+ }
 
-        }
-
-     
         .left-menu li {
             padding: 10px;
             list-style: none;
         }
-
-</style><div class="left-col"> 
+        </style><div class="left-col"> 
 
     <ul class="left-menu">
         <li>
-            <a href="dash.php" style="text-decoration:none;">
-                Dashboard
+            <a href="customer-list.php">
+                customer list
             </a>
         </li>
         <li>
-            <a href="customer.php" style="text-decoration:none;">
-                Customers
+            <a href="customer_statements.php">
+                Customer statements
             </a>
         </li>
         <li>
-            <a href="sales.php" style="text-decoration:none;">
-                Sales
+            <a href="wavepluscustomers.php">
+                wave plus customer
             </a>
-        </li>
-        <li>Purchase</li>
-        <li>products</li>
-        <li>logout</li>
-        
-    </ul>
-</div>

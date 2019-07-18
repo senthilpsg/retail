@@ -50,8 +50,11 @@
         <div class="right-col" style="text-decoration:none;" >
         <h1>Customers</h1>
     <div style="float:right;padding-down:30px;">
-    <button class="btn">Add a customer</button>
-    <a href="customer-list.php"></a>
+    <form action="customer-list.php">
+    <button  class="btn" type="submit">Add a customer</button>
+    </form>
+  
+    
     </div>
 
     <style></style>

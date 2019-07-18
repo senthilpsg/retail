@@ -1,33 +1,27 @@
-<div class="left-col">
+<div class="left-col" style="text-decoration:none;">
 
     <ul class="left-menu" style="color:dimgray;">
         <li>
-            <a style="text-decortion:none;" href="dash.php">
+            <a href="dash.php" style="text-decortion:none;">
                 Dashboard
             </a>
         </li>
         <li>
-            <a style="text-decortion:none;" href="customer.php">
+            <a  href="customer.php" style="text-decoration:none;">
                 Customers
             </a>
         </li>
         <li>
-            <a style="text-decortion:none;" href="sales.php ">
+            <a href="sales.php" style="text-decoration:none;">
                 Sales
             </a>
         </li>
         <li>
-            <a style="text-decortion:none;" href="customer statements.php">
+            <a href="customer statements.php" style="text-decoration:none;">
                 customer statements
             </a>
-        <li>Purchase</li>
-        <li>Inventory</li>
-        <li>Settings</li>
         <li>purchases</li>
-        <li>accounting</li>
-        <li>banking</li>
-        <li>payroll</li>
-        <li>payments</li>
+        <li>products</li>
         
     </ul>
 </div>
