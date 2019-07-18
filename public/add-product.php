@@ -1,5 +1,5 @@
 <html>
-<title>customer list</title>
+<title>add a product</title>
 <head>
 <style>
 
@@ -53,18 +53,15 @@
             include "menu-2.php";
             ?>
         <div class="right-col" style="text-decoration:none;" >
-        <h1>Add a Customer</h1>
+        <h1>Add a Product</h1>
 
     <div>
-                username:<input id="input" type="text" placeholder="" name="username" required><br>
-                password:<input type="text" id="input" placeholder="" name="password" required><br>
-                   email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="email" required><br>
-                phone no:<input type="text" id="input" placeholder="" name="phone-no" required><br>
-                <div style="height:2000px;width:800px;">
-                 address:  <input type="text" id="input" placeholder="" name="adress" required><br><br><br>
-                 <div style="height:800px;width:800px;">
-                 <form action="customer.php;">
-                 <button class="btn" style="float:right;">save</button>
+                Product name:<input id="input" type="text" placeholder="" name="productname" required><br>
+                Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="price" required><br>
+                Brand:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="brand" id="input" placeholder="" name="email" required><br>
+                Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="quantity" required><br>
+                <form action="product.php">
+                 <button class="btn" style="float:right;">Add</button>
                  </form>
                  </div>
                  

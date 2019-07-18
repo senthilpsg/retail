@@ -81,7 +81,7 @@ if(isset($_GET['username'])){
 
         <p><?php echo $message;  ?></p>
     </center>
-    <form action=""" method=" get">
+    <form action="" method=" get">
         <center>
             <div class="container">
 

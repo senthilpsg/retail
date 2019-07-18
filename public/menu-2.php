@@ -20,8 +20,18 @@
             <a href="customer statements.php" style="text-decoration:none;">
                 customer statements
             </a>
-        <li>purchases</li>
-        <li>products</li>
+            <li>
+            <a href="purchases.php" style="text-decoration:none;">
+                purchases
+            </a>
+        </li>
+        <li>
+            <a href="products.php" style="text-decoration:none;">
+                products
+            </a>
+            </li>
+
+    
         
     </ul>
 </div>
