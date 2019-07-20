@@ -50,6 +50,9 @@
 </style>
 <body>
 <?php
+ include "functions.php";
+ check_out();
+
             include "menu-2.php";
             ?>
         <div class="right-col" style="text-decoration:none;" >

@@ -45,6 +45,9 @@
         </style>
         <body>
         <?php
+        include "functions.php";
+        check_out();
+       
             include "menu.php";
             ?>
         <div class="right-col" style="text-decoration:none;" >

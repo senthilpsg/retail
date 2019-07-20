@@ -30,7 +30,10 @@
                 products
             </a>
             </li>
-
+            <li> <a href="logout.php" style="text-decoration:none;">
+        logout
+        </li>
+        
     
         
     </ul>
