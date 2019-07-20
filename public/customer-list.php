@@ -1,4 +1,6 @@
 <?php
+var_dump($_POST);
+
 include "functions.php";
 check_out();
 ?>  
@@ -60,6 +62,8 @@ check_out();
         <h1>Add a Customer</h1>
 
     <div>
+
+    <form action="" method="POST">
                 username:<input id="input" type="text" placeholder="" name="username" required><br>
                 password:<input type="text" id="input" placeholder="" name="password" required><br>
                    email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="email" required><br>
@@ -67,7 +71,7 @@ check_out();
                 <div style="height:2000px;width:800px;">
                  address:  <input type="text" id="input" placeholder="" name="adress" required><br><br><br>
                  <div style="height:800px;width:800px;">
-                 <form action="customer.php;">
+                 
                  <button class="btn" style="float:right;">save</button>
                  </form>
                  </div>

@@ -10,6 +10,9 @@ function check_out(){
 }
 
 
+/*
+This function creates a connection to mysql database and returns a connection number
+*/
 function connect_db($server,$user,$pass,$dbname){
     global $conn;
     $conn = mysqli_connect($server,$user, $pass,$dbname);

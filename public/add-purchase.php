@@ -57,7 +57,7 @@
 include "functions.php";
 check_out();
 
-            include "menu-2.php";
+            include "menu.php";
             ?>
     <div class="right-col" style="text-decoration:none;">
         <h1>Add a purchase</h1>
