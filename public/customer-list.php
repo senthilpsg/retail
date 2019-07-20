@@ -1,3 +1,7 @@
+<?php
+include "functions.php";
+check_out();
+?>  
 <html>
 <title>customer list</title>
 <head>
@@ -50,7 +54,7 @@
 </style>
 <body>
 <?php
-            include "menu-2.php";
+            include "menu.php";
             ?>
         <div class="right-col" style="text-decoration:none;" >
         <h1>Add a Customer</h1>
