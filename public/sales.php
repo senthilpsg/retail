@@ -31,6 +31,10 @@
 </head>
 <body>
 <?php
+
+include "functions.php";
+ check_out();
+
  include "menu.php";
  ?>
 <div class="right-col">

@@ -4,7 +4,7 @@
 <style>
 #nkl {
     height: 621px;
-    width: 1034px;
+    width: 1000px;
     float: left;
 }
 
@@ -17,7 +17,7 @@
 
 #btm {
 
-
+ border : 1px 
     border-radius: 8px;
     height: 134px;
     width: 773px;
@@ -40,7 +40,7 @@
 
 <body>
 
-    <?php include 'menu vsm.php';?>
+    <?php include 'menu.php';?>
     <div id="nkl">
         <div id="jk">
         
