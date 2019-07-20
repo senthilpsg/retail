@@ -5,8 +5,9 @@ global $conn;
 session_start();
 function check_out(){
     if(!isset($_SESSION['username'])){
-    header('Location: index.php');
-}
+        header('Location: index.php');
+       }
+    
 }
 
 

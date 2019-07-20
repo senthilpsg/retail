@@ -1,3 +1,17 @@
+ <?php
+ include "functions.php";
+
+ check_out();
+    
+
+ $a="localhost";
+ $b="root";
+ $c="";
+ $d="retail";
+ connect_db($a,$b,$c,$d);
+ var_dump($_POST);
+   
+?>
 <html>
 <title>add a product</title>
 <head>
@@ -50,20 +64,18 @@
 </style>
 <body>
 <?php
- include "functions.php";
- check_out();
-
             include "menu-2.php";
             ?>
         <div class="right-col" style="text-decoration:none;" >
         <h1>Add a Product</h1>
 
     <div>
-                Product name:<input id="input" type="text" placeholder="" name="productname" required><br>
-                Price:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="price" required><br>
-                Brand:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="brand" id="input" placeholder="" name="email" required><br>
-                Quantity:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="quantity" required><br>
-                <form action="product.php">
+               <form action="product.php" method="POST">
+                ID:<input id="input" type="text" placeholder="" name="id" required><br>
+                product name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="product_name" required><br>
+                product pirce:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="brand" id="input" placeholder="" name="product_price)" required><br>
+                
+              
                  <button class="btn" style="float:right;">Add</button>
                  </form>
                  </div>
@@ -72,4 +84,4 @@
          </div>
 </body>
 </head>
-</html>
+</html
