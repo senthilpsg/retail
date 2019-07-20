@@ -66,8 +66,8 @@
     <table style="width:1024px;">
         <tr style="text-align:left;"><br><br><br><br><br>
           
-            <th style=width:30%;>S.NO</th>
-            <th style=width:30%;>Name</th>
+            <th style=width:30%;>id</th>
+            <th style=width:30%;>productName</th>
             <th style=width:25%;>Price</th>
             <th style=width:25%;>Brand</th>
 
