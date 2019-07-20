@@ -19,10 +19,11 @@ function connect_db($server,$user,$pass,$dbname){
     }
     
         else{
-            ("Connection failed: " . mysqli_connect_error());
+            die("Connection failed: " . mysqli_connect_error());
     }
-    
 }
+
+
 
 
 
@@ -135,6 +136,7 @@ function sign_up(){
     }
     
 }
+
 
 
 ?>

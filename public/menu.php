@@ -47,6 +47,7 @@
         
         <li> <a href="logout.php" style="text-decoration:none;">
         logout
+        </a>
         </li>
         
     </ul>
