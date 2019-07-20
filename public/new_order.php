@@ -83,6 +83,9 @@ th tr {
 
 <body>
 <?php
+include "functions.php";
+check_out();
+
  include "menu.php";
  ?>
     <div id="asd">

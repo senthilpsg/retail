@@ -3,6 +3,12 @@
 global $conn;
 
 session_start();
+function check_out(){
+    if(!isset($_SESSION['username'])){
+    header('Location: index.php');
+}
+}
+
 
 function connect_db($server,$user,$pass,$dbname){
     global $conn;
