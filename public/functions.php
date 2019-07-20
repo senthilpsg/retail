@@ -54,7 +54,7 @@ function login(){
         $message = "Login Failed";
     }
         
-}
+
 
 
 
@@ -74,7 +74,18 @@ function get_user($username){
     return $row;
 
 }
+function get_product($product_name) {
+    global $conn;
+    $sql="select * from product where product_name='" .$product_name . "' ";
+    
+    $result=mysqli_query($conn,$sql);
+    
+    $row = mysqli_fetch_assoc($result);
 
+    return $row;
+
+
+}
 function authenticate($username,$password){
 
     $userdata = get_user($username);

@@ -11,11 +11,11 @@
  $d="retail";
  connect_db($a,$b,$c,$d);
  //var_dump($_POST);
-   $id=$_POST['id'];
+   
    $product_name=$_POST['product_name'];
    $product_price=$_POST['product_price'];
- $sql="INSERT INTO `product` ( `ID`, `product_name`, `product_price`) VALUES
-    ('$id', '$product_name','$product_price')";
+ $sql="INSERT INTO `product` ( `product_name`, `product_price`) VALUES
+    ( '$product_name','$product_price')";
     
     //echo "<br><br>" . //$sql . "<br>";
    $cc= mysqli_query($conn,$sql);
