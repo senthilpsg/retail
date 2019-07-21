@@ -23,7 +23,7 @@ if(isset($_POST['btn_register'])){
 
 <body>
     <center>
-        <img src="img/logo-full-black.svg" alt="wave"><br><br>
+      <h1 style="color: #0f529f;">RETAIL</h1>
 
         <p class="message"><?php echo $message ?></p>
 
@@ -74,13 +74,29 @@ if(isset($_POST['btn_register'])){
             border-radius: 500px;
             font-family: Averta, sans-serif;
             margin-top: 40px;
+            background: #0f529f;
+            color:white;
+        }
+        #in{
+            text-align: center;
+            width: 55%;
+            height: 7%;
+            color: black;
+            font-size: 19px;
+            border: 1px solid #b2c2cd;
+            border-radius: 500px;
+            font-family: Averta, sans-serif;
+            margin-top: 40px;
+            background: #0f529f;
+            color:white;
+            margin-top:7px;
         }
         </style>
         <form action="" method="POST">
             <div><input id="input" type="text" placeholder="  Email" name="email" required>
             </div>
             <div>
-                <input type="text" id="input" placeholder=" Password" name="password" required>
+                <input type="password" id="input" placeholder=" Password" name="password" required>
                 <input type="text" id="input" placeholder="  username" name="username" required>
                 <input type="text" id="input" placeholder="  phone no" name="phone_no" required>
                 <input type="text" id="input" placeholder="  display name" name="display_name" required>
@@ -94,8 +110,12 @@ if(isset($_POST['btn_register'])){
 
     <center>
         <button id="vsm" name="btn_register"> Register </button>
+        </form>
+        <form action="index.php">
+        <button id="in" name="signin"> sign in</button>
+        </form>
     </center>
-    </form>
+    
 
 </body>
 
