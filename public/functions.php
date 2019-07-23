@@ -132,7 +132,7 @@ function sign_up(){
      $c="";
      $d="retail";
 
-    connect_db($a,$b,$c,$d);
+    connect_db($,$b,$c,$d);
    
 
     $email=$_POST['email'];
