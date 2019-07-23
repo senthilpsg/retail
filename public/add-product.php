@@ -18,9 +18,14 @@
     ( '$product_name','$product_price')";
     
     //echo "<br><br>" . //$sql . "<br>";
-   $cc= mysqli_query($conn,$sql);
+   $cc= mysqli_query($conn,$sql);   
+    
+    $row = mysqli_fetch_assoc($cc);
 
-   
+    return $row;
+
+}
+
     
    
 ?>

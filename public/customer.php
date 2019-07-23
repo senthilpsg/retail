@@ -1,5 +1,42 @@
 <?php
-include_once 'functions.php';
+
+include_once "functions.php";
+check_out();
+
+var_dump($_POST);
+
+
+    
+    $sr="localhost";
+     $un="root";
+     $p="";
+     $n="retail";
+     connect_db($sr,$un,$p,$n);
+
+    //  $qr=mysqli_query($conn,$sql);
+    $cust = [];
+
+    $cust= get_customer();
+
+
+function get_customer() {
+    global $conn;
+    $sql="select * from customer" ;
+
+    $result=mysqli_query($conn,$sql);
+    $customer = [];
+
+    while ($row = mysqli_fetch_assoc($result)){
+        $customer[] = $row;
+    }
+    
+    return $customer;
+
+
+}
+
+
+
 
 ?>
 
@@ -64,7 +101,7 @@ include_once 'functions.php';
     <div class="right-col" style="text-decoration:none;">
         <h1>Customers</h1>
         <div style="float:right;padding-down:30px;">
-            <form action="customer-list.php">
+            <form action="add-customer.php">
                 <button class="btn" type="submit">Add a customer</button>
             </form>
 
@@ -73,6 +110,7 @@ include_once 'functions.php';
 
         <style></style>
         <table style="width:1024px;">
+    
             <tr style="text-align:left;"><br><br><br><br><br>
 
                 <th style=width:30%;>Name</th>
@@ -81,37 +119,27 @@ include_once 'functions.php';
                 <th style=width:25%;>Action</th>
 
             </tr>
-
+            <?php
+            $i=0;
+            foreach($cust as $c) {
+                $i++;
+                
+            ?>
+<tr>
             <td>
-                Shashwanth
+                <?php echo $c['customer_name'] ; ?>
             </td>
             <td>
-                shash@gmail.com
+            <?php echo $c['email'] ; ?>
             </td>
-            <td>9879869868</td>
+            <td>
+            <?php echo $c['phone_no'] ; ?>
+            </td>
             <td>Delete</td>
             </tr>
-            <tr style="text-align:left;">
-                <td>
-                    yashwanth
-                </td>
-                <td>yash@gmail</td>
-                <td>9631363653</td>
-                <td>delete</td>
-
-            <tr style="text-align:left;">
-                <td>monish</td>
-                <td>monish@gmail.com</td>
-                <td>9632636566</td>
-                <td>delete</td>
-
-            </tr>
-            <tr style="text-align:left  ;">
-                <td>ragul</td>
-                <td>ragul@gmail.com</td>
-                <td>9373878764</td>
-                <td>delete</td>
-            </tr>
+            <? }?>
+          
+            
         </table>
     </div>
     </div>

@@ -56,7 +56,7 @@ function login(){
     else{
         $message = "Login Failed";
     }
-        
+}       
 
 
 
@@ -120,8 +120,8 @@ function save_user($username,$password,$email,$phone_no,$display_name){
     ('$username', '$password', '$email', '$display_name', '$phone_no', 'active', '2019-07-13')";
     
     //echo "<br><br>" . //$sql . "<br>";
-    $cc=mysqli_query($conn,$sql);
-    return $cc;
+    $qr=mysqli_query($conn,$sql);
+    return $qr;
 }
 
 function sign_up(){
@@ -149,9 +149,6 @@ function sign_up(){
     else{
         $message = "Error in registering the user";    
     }
-    
 }
-
-
-
+    
 ?>

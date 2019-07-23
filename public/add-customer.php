@@ -1,9 +1,44 @@
 <?php
-var_dump($_POST);
+var_dump($_POST); 
+include_once "functions.php";
 
-include "functions.php";
 check_out();
-?>  
+
+if(isset($_POST['btn_save'])){
+    $sr="localhost";
+    $un="root";
+    $p="";
+    $n="retail";
+    $conn = connect_db($sr,$un,$p,$n);
+   
+   $ID=$_POST[''];
+   $customer_name=$_POST['customer_name'];
+   $email=$_POST['email'];
+   $phone_no=$_POST['phone_no'];
+   $address=$_POST['address'];
+   
+   var_dump($_POST);
+
+    $sql = "INSERT INTO `customer` ( `ID`, `customer_name`, `email`, `phone_no`, `address`)
+     VALUES (NULL, '$customer_name', '$email', '$phone_no', '$address') ";
+    
+    //echo  "<br>". $sql . "</br>";
+
+    $qr=mysqli_query($conn,$sql);
+
+     header ("Location:customer.php");
+
+}
+
+    
+    
+    
+    
+     ?>
+
+
+
+
 <html>
 <title>customer list</title>
 <head>
@@ -64,15 +99,14 @@ check_out();
     <div>
 
     <form action="" method="POST">
-                username:<input id="input" type="text" placeholder="" name="username" required><br>
-                password:<input type="text" id="input" placeholder="" name="password" required><br>
-                   email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="email" required><br>
-                phone no:<input type="text" id="input" placeholder="" name="phone-no" required><br>
+                customer_name:<input id="input" type="text" placeholder="" name="customer_name" required><br>
+                email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="email" required><br>
+                 phone_no:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="phone_no" required><br>
                 <div style="height:2000px;width:800px;">
-                 address:  <input type="text" id="input" placeholder="" name="adress" required><br><br><br>
+                 address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="input" placeholder="" name="address" required><br><br><br>
                  <div style="height:800px;width:800px;">
                  
-                 <button class="btn" style="float:right;">save</button>
+                 <button class="btn" style="float:right;" name="btn_save">save</button>
                  </form>
                  </div>
                  
