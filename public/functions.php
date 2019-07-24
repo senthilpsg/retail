@@ -10,11 +10,12 @@ function check_out(){
     
 }
 
-
 /*
 This function creates a connection to mysql database and returns a connection number
 */
-function connect_db($server,$user,$pass,$dbname){
+
+function connect_db($server="localhost",$user="root",$pass="",$dbname="retail"){
+
     global $conn;
     $conn = mysqli_connect($server,$user, $pass,$dbname);
     
@@ -56,8 +57,13 @@ function login(){
     else{
         $message = "Login Failed";
     }
+<<<<<<< HEAD
 }       
 
+=======
+        
+}
+>>>>>>> 7ffc40c12d56c9e3342be8b0e77cc71b033b1a59
 
 
 
@@ -77,18 +83,23 @@ function get_user($username){
     return $row;
 
 }
-function get_product($product_name) {
+
+function get_products() {
     global $conn;
-    $sql="select * from product where product_name='" .$product_name . "' ";
+    $sql="select * from product" ;
+    $products = [];
     
     $result=mysqli_query($conn,$sql);
-    
-    $row = mysqli_fetch_assoc($result);
 
-    return $row;
+    while($row = mysqli_fetch_assoc($result)){
+        $products[] = $row;
+    }
+
+    return $products;
 
 
 }
+
 function authenticate($username,$password){
 
     $userdata = get_user($username);

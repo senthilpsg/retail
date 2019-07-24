@@ -1,9 +1,6 @@
  <?php
- if(isset($_POST['btn_register'])){}
  include "functions.php";
-
  check_out();
-    
 
  $a="localhost";
  $b="root";
@@ -27,6 +24,26 @@
 }
 
     
+
+ if(isset($_POST['btn_register'])){
+    $a="localhost";
+    $b="root";
+    $c="";
+    $d="retail";
+    connect_db($a,$b,$c,$d);
+    //var_dump($_POST);
+      
+      $product_name=$_POST['product_name'];
+      $product_price=$_POST['product_price'];
+   
+    $sql="INSERT INTO `product` ( `product_name`, `product_price`) VALUES
+       ( '$product_name','$product_price')";
+       
+       echo "<br><br>" . $sql . "<br>";
+       
+      $cc= mysqli_query($conn,$sql);
+      header('Location:products.php')   ;
+ }   
    
 ?>
  <html>
@@ -92,8 +109,7 @@
 
          <div>
              <form action="" method="POST">
-                 ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input
-                     id="input" type="text" placeholder="" name="id" required><br>
+                 
                  product name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="input"
                      placeholder="" name="product_name" required><br>
                  product pirce:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input

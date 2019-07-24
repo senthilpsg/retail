@@ -22,7 +22,7 @@ if(isset($_GET['username'])){
 <head>
     <title>wave page</title>
     <center>
-        <img src="img/logo-full-black.svg" alt="wave">
+    <h1 style="color: #0f529f;margin-left:5px;">RETAIL</h1>
     </center>
     <style>
     h1,
@@ -70,9 +70,21 @@ if(isset($_GET['username'])){
         border-radius: 50px;
         display: inline-block;
         box-sizing: border-box;
-
-
+        margin-top:5px;
+        }
+    #reg{
+        background: #0f529f;
+        color: white;
+        width: 95%;
+        padding: 8px 20px;
+        border-radius: 50px;
+        display: inline-block;
+        box-sizing: border-box;
+        text-decoration:none;
     }
+
+
+    
     </style>
 
 <body>
@@ -94,24 +106,28 @@ if(isset($_GET['username'])){
 
                     <div class="password" required>
 
-                        <input style="min-height:40px;width:100%;background:#bad6f7;color#fff;" type="text"
+                        <input style="min-height:40px;width:100%;background:#bad6f7;color#fff;" type="password"
                             placeholder="password" name="pass"></div><br>
 
 
 
                     <div class="forgotpassword">
-                        <a style="text-decoration:none;" href="forgotit.php">forgot password?</a>
+                        <a style="text-decoration:none;" href="forgotit.php">forgot password?</a
+                        
                     </div>
 
-                    <button class="btn" type="submit">sign in</button>
-
-
-            </div>
-        </center>
+                    <button class="btn" type="submit">sign in</button><br><br>
+                  
+        </div>
     </form>
+    <form  action="signup.php">
+    <button id="reg">Register</button>
+    </form>
+    </center>
+    
 
 
-
+           
 </body>
 
 
