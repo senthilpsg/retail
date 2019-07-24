@@ -57,13 +57,10 @@ function login(){
     else{
         $message = "Login Failed";
     }
-<<<<<<< HEAD
 }       
 
-=======
         
-}
->>>>>>> 7ffc40c12d56c9e3342be8b0e77cc71b033b1a59
+
 
 
 
@@ -143,7 +140,7 @@ function sign_up(){
      $c="";
      $d="retail";
 
-    connect_db($,$b,$c,$d);
+    connect_db($a,$b,$c,$d);
    
 
     $email=$_POST['email'];
