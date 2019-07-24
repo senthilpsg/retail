@@ -8,9 +8,10 @@
  $d="retail";
  connect_db($a,$b,$c,$d);
  //var_dump($_POST);
-   
-   $product_name=$_POST['product_name'];
-   $product_price=$_POST['product_price'];
+
+$produc_name = $_POST['product_name'];
+
+ $product_price=$_POST['product_price'];
  $sql="INSERT INTO `product` ( `product_name`, `product_price`) VALUES
     ( '$product_name','$product_price')";
     
