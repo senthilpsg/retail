@@ -9,20 +9,7 @@
  connect_db($a,$b,$c,$d);
  //var_dump($_POST);
 
-$produc_name = $_POST['product_name'];
-
- $product_price=$_POST['product_price'];
- $sql="INSERT INTO `product` ( `product_name`, `product_price`) VALUES
-    ( '$product_name','$product_price')";
-    
-    //echo "<br><br>" . //$sql . "<br>";
-   $cc= mysqli_query($conn,$sql);   
-    
-    $row = mysqli_fetch_assoc($cc);
-
-    return $row;
-
-}
+ 
 
     
 
