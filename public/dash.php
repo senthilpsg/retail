@@ -108,7 +108,7 @@ include "functions.php";
             <a style="color:#136acd;font-family:arial;text-decoration:none;" href="&">upload a bank statement</a>
         </div>
         <div class="cash;"style="border:2px solid black;" >
-                <div style="color:black;font:averta,sans;font-size:30px;border:2px solid blue;">
+                <div style="color:black;font:averta,sans;font-size:30px;">
                     <h5>cash flow</h5><a style="color:#136acd;text-decoration:none;float:right;font-size:20px;" href="#">View report</a>
                     <div style="color:gray;font-size:24px;">
                         <h6>Coming in and going out of your business</h6>
