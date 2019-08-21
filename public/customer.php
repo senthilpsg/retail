@@ -3,7 +3,7 @@
 include_once "functions.php";
 check_out();
 
-var_dump($_POST);
+
 
 
     
@@ -32,7 +32,8 @@ function get_customer() {
     
     return $customer;
 
-
+    $del="DELETE FROM customer where customer_name=shashwanth";
+    $conn->exec($sql);
 }
 
 

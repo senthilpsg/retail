@@ -1,5 +1,5 @@
 <?php
-var_dump($_POST); 
+
 include_once "functions.php";
 
 check_out();
@@ -17,7 +17,7 @@ if(isset($_POST['btn_save'])){
    $phone_no=$_POST['phone_no'];
    $address=$_POST['address'];
    
-   var_dump($_POST);
+
 
     $sql = "INSERT INTO `customer` ( `ID`, `customer_name`, `email`, `phone_no`, `address`)
      VALUES (NULL, '$customer_name', '$email', '$phone_no', '$address') ";
